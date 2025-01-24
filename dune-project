@@ -43,6 +43,7 @@
   (tls (>= 0.17.0))
   (tls-lwt (>= 0.17.0))
 
+  ppx_make
   (ppx_deriving_yojson (>= 3.7.0))
   (ppx_deriving (>= 5.2.1))
 
