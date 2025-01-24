@@ -17,7 +17,10 @@
   (dune (> 2.9))
 
   openapi_spec
-
+  ppxlib
+  (http (>= 6.0.0))
+  (tezt :with-test)
+  (camelsnakekebab (>= 0.4))
   (ocamlformat :with-test)))
 
 (package
@@ -36,11 +39,11 @@
   (multipart_form-cohttp-lwt (>= 0.5.0))
   (uuidm (>= 0.9.8))
   (cohttp-lwt-unix (>= 5.2.0))
-  (http (>= 6.0.0~alpha1))
+  (http (>= 6.0.0))
   (tls (>= 0.17.0))
   (tls-lwt (>= 0.17.0))
-  (camelsnakekebab (>= 0.4))
 
+  ppx_make
   (ppx_deriving_yojson (>= 3.7.0))
   (ppx_deriving (>= 5.2.1))
 
@@ -55,7 +58,8 @@
  (depends
   (dune (> 2.9))
   (uri (>= 4.2.0))
+  yojson
 
-  (atdgen (and :with-test (>= 2.11.0))) ; Only needed for generation of ATD sources
+  (atdgen (>= 2.11.0)) ; Only needed for generation of ATD sources
   (ppx_expect (and :with-test (>= v0.15.1)))
   (tezt :with-test)))
