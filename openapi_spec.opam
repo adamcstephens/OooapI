@@ -12,7 +12,7 @@ depends: [
   "dune" {>= "3.7" & > "2.9"}
   "uri" {>= "4.2.0"}
   "yojson"
-  "atdgen" {with-test & >= "2.11.0"}
+  "atdgen" {>= "2.11.0"}
   "ppx_expect" {with-test & >= "v0.15.1"}
   "tezt" {with-test}
   "odoc" {with-doc}
