@@ -17,8 +17,10 @@
   (dune (> 2.9))
 
   openapi_spec
+  ppxlib
   (http (>= 6.0.0))
-
+  (tezt :with-test)
+  (camelsnakekebab (>= 0.4))
   (ocamlformat :with-test)))
 
 (package
@@ -40,7 +42,6 @@
   (http (>= 6.0.0))
   (tls (>= 0.17.0))
   (tls-lwt (>= 0.17.0))
-  (camelsnakekebab (>= 0.4))
 
   (ppx_deriving_yojson (>= 3.7.0))
   (ppx_deriving (>= 5.2.1))
